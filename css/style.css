@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* css reset for input range */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #dadada;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: #dadada;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  transform: translateY(-25%);
+  background-color: #303030;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 1rem;
+}
+
+input[type="range"]::-moz-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  /* margin-top: 12px; Centers thumb on the track */
+  transform: translateY(-25%);
+  background-color: #303030;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 1rem;
+}
+
+.bmi-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bmi-wrapper {
+  background-color: #fff;
+  padding-bottom: 3rem;
+  border-radius: 1.6rem;
+}
+
+.bmi-calculate {
+  border-radius: 1.6rem;
+  width: 60rem;
+  padding: 3rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+  gap: 3rem 2rem;
+}
+
+.user-weight {
+  justify-self: center;
+}
+
+.user-height {
+  justify-self: center;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result-number {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.result-status {
+  text-transform: capitalize;
+}
